@@ -8,6 +8,7 @@
 cd boss-scraper
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+cp .env.example .env   # 按需编辑 .env；该文件已被 .gitignore 忽略，不会提交
 ```
 
 先以远程调试端口启动 Chrome（默认 `9222`），再执行：
@@ -28,8 +29,9 @@ python main.py --analyze output/关键词_城市_时间戳.csv
 |------|------|
 | [docs/](docs/README.md) | PRD、架构设计与使用文档 |
 | [src/](src/README.md) | 源代码包（api / core / data / utils / analytics） |
-| [data/](data/README.md) | 运行期缓存与中间数据（勿提交敏感内容） |
+| [data/](data/README.md) | 运行期缓存与中间数据（勿提交敏感内容；目录默认 gitignore） |
 | [output/](output/README.md) | 导出结果（xlsx / csv / md / json） |
+| `resume_optimizer/` | 简历优化模块（本地目录，默认 gitignore；克隆后自行创建） |
 | `main.py` | CLI 与交互式向导入口 |
 
 ## 架构概要（摘自架构文档）

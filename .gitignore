@@ -39,9 +39,10 @@ env/
 .DS_Store
 Thumbs.db
 
-# Project specific
+# Project specific — 本地数据与简历优化模块（不入库）
 data/
 output/
+# 简历优化模块（本地开发目录）
 resume_optimizer/
 
 # Logs
